@@ -16,20 +16,23 @@
 
             <th>nome</th>
 
+            <th>marca</th>
+
             <th>preço</th>
 
             <th>tamanho</th>
 
-            <th>marca</th>
+
         </tr>
         </thead>
         <tbody>
             <tr th:each="sapato: ${sapatos}" th:object="${sapato}">
                 <td th:text="*{id}"></td>
                 <td th:text="*{nome}"></td>
+                <td th:text="*{marca}"></td>
                 <td th:text="*{preco}"></td>
                 <td th:text="*{tamanho}"></td>
-                <td th:text="*{marca}"></td>
+
             </tr>
         </tbody>
     </table>
