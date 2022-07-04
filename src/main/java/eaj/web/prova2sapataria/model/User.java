@@ -13,7 +13,7 @@ import javax.validation.constraints.Size;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "usuarios")
+@Table(name = "usuario")
 //extends UserDetails>>>>>>>>>>
 public class User{
 
