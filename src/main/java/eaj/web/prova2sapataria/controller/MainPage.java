@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 @Controller
@@ -24,7 +25,7 @@ public class MainPage {
     }
 
     @GetMapping("/index")
-    public String home(Model model){
+    public String home(Model model) throws IOException {
         List<Sapatos> sapatos = service.findAll();
         model.addAttribute("sapatos", sapatos);
 

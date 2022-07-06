@@ -36,7 +36,7 @@ public class Sapatos {
     int tamanho;
 
     String marca;
-    Date Deleted;
+    boolean Deleted;
     String ImageUri;
 
 //c) Defina os atributos do seu tema. Cada tema deve ser especificado como uma classe com pelo

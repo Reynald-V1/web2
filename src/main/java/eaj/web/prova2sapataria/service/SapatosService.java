@@ -16,8 +16,6 @@ public class SapatosService {
         this.repository = repository;
     }
 
-
-
     public Sapatos create(Sapatos sapato){
 
         return repository.save(sapato);
